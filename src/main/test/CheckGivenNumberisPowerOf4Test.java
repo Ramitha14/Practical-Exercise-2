@@ -6,34 +6,34 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class CheckGivenNumberisPowerOf4Test {
-    CheckGivenNumberisPowerOf4 obj;
+    CheckGivenNumberisPowerOf4 object;
     @Before
     public void setup()
     {
-        obj=new CheckGivenNumberisPowerOf4();
+        object =new CheckGivenNumberisPowerOf4();
     }
     @Test
-    public void GivenNumberisPowerOf4()
+    public void givenNumberShouldReturnTrueforSixtyFour()
     {
-        boolean result=obj.GivenNumberisPowerOf4ornot(64);
+        boolean result= object.givenNumberisPowerOf4ornot(64);
         assertEquals(true,result);
     }
     @Test
-    public void GivenNumberisNotPowerOf4()
+    public void givenNumberShouldReturnTrueforSeventy()
     {
-        boolean result=obj.GivenNumberisPowerOf4ornot(70);
+        boolean result= object.givenNumberisPowerOf4ornot(70);
         assertEquals(false,result);
     }
     @Test
-    public void GivenNumberisOdd()
+    public void givenNumberShouldReturnFalseforThirtyOne()
     {
-        boolean result=obj.GivenNumberisPowerOf4ornot(31);
+        boolean result= object.givenNumberisPowerOf4ornot(31);
         assertEquals(false,result);
     }
     @Test
-    public void GivenNumberisZero()
+    public void givenNumberShouldReturnFalseforZero()
     {
-        boolean result=obj.GivenNumberisPowerOf4ornot(0);
+        boolean result= object.givenNumberisPowerOf4ornot(0);
         assertEquals(false,result);
     }
 

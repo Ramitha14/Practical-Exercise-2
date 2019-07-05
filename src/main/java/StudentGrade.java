@@ -1,5 +1,6 @@
 import java.util.*;
 public class StudentGrade {
+  //to calculate the student grade
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
@@ -11,20 +12,22 @@ public class StudentGrade {
             marks[i]=sc.nextInt();
             sum=sum+marks[i];
         }
-        float average=Calculateaverage(sum,noofstudents);
-        int maximum=Calculatemaximum(marks);
-        int minimum=Calculateminimum(marks);
+        float average= calculateAverage(sum,noofstudents);
+        int maximum= calculateMaximum(marks);
+        int minimum= calculateMinimum(marks);
         System.out.println(average);
         System.out.println(maximum);
         System.out.println(minimum);
 
     }
-    public static float Calculateaverage(int total,int n)
+    //to calculate the average of student marks
+    public static float calculateAverage(int total, int n)
     {
         float avg=total/n;
         return avg;
     }
-    public static int Calculatemaximum(int arr[])
+    //to calculate the minimum of student marks
+    public static int calculateMaximum(int arr[])
     {
         int max=arr[0];
         for(int i=0;i<arr.length;i++)
@@ -37,7 +40,8 @@ public class StudentGrade {
         return max;
 
     }
-    public static int Calculateminimum(int arr[])
+    //to calculate the minimum of student marks
+    public static int calculateMinimum(int arr[])
     {
         int min=arr[0];
         for(int i=0;i<arr.length;i++)

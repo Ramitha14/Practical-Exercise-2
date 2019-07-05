@@ -1,5 +1,6 @@
 public class StringPalindrome {
-    public String CheckPalindrome(String str)
+  // to check for string palindrome
+    public String checkPalindrome(String str)
     {
         String reverse="";
         for(int i=str.length()-1;i>=0;i--){

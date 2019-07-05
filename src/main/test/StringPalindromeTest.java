@@ -11,15 +11,15 @@ public class StringPalindromeTest {
             palindrome=new StringPalindrome();
         }
         @Test
-        public void StringisPalindrome()
+        public void givenStringShouldReturnPalindrome()
         {
-            String result=palindrome.CheckPalindrome("malayalam");
+            String result=palindrome.checkPalindrome("malayalam");
             assertEquals("palindrome",result);
         }
         @Test
-        public void StringisNotPalindrome()
+        public void givenStringShouldReturnNotPalindrome()
         {
-            String result=palindrome.CheckPalindrome("hello");
+            String result=palindrome.checkPalindrome("hello");
             assertEquals("Not palindrome",result);
         }
 

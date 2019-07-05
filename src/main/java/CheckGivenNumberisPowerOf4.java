@@ -1,5 +1,6 @@
 public class CheckGivenNumberisPowerOf4 {
-    public boolean GivenNumberisPowerOf4ornot(int number)
+ //to check the power of 4
+    public boolean givenNumberisPowerOf4ornot(int number)
     {
         if(number%2!=0)
         {

@@ -1,5 +1,6 @@
 public class NumberPalindrome {
-    public String CheckPalindrome(int number)
+    //to check for number palindrome
+    public String checkPalindrome(int number)
     {
         int temp=number;
         int digit,sum=0;

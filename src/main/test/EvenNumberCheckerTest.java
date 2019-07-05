@@ -12,33 +12,33 @@ public class EvenNumberCheckerTest {
     }
 
     @Test
-    public void GivenNumberisEven() {
+    public void givenNumberShouldReturnTrueforEvenNumber() {
         boolean result = evennumberchecker.isEven(24);
         assertEquals(true, result);
 
     }
 
     @Test
-    public void GivenNumberisOdd() {
+    public void givenNumberShouldReturnFalseforOddNumber() {
         boolean result = evennumberchecker.isEven(31);
         assertEquals(false, result);
 
     }
 
     @Test
-    public void GivenNumberisEvenorOdd() {
+    public void givenNumberShouldReturnTrueForZero() {
         boolean result = evennumberchecker.isEven(0);
         assertEquals(true, result);
 
     }
     @Test
-    public void GivenNegativeNumberisEven() {
+    public void givenNegativeNumberShouldReturnTrue() {
         boolean result = evennumberchecker.isEven(-10);
         assertEquals(true, result);
 
     }
     @Test
-    public void GivenNegativeNumberisOdd() {
+    public void givenNegativeNumberShouldReturnFalse() {
         boolean result = evennumberchecker.isEven(-21);
         assertEquals(false, result);
 

@@ -4,16 +4,16 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class FindFactorialOfNumberTest {
-    FindFactorialOfNumber obj;
+    FindFactorialOfNumber object;
     @Before
     public void setup()
     {
-        obj=new FindFactorialOfNumber();
+        object =new FindFactorialOfNumber();
     }
     @Test
-    public void FindFactorialOfPositiveNumber()
+    public void toFindFactorialOfPositiveNumber()
     {
-        int result=obj.FindFactorialOfGivenNumber(12);
+        int result= object.findFactorialOfGivenNumber(12);
         assertEquals(479001600,result);
 
     }
